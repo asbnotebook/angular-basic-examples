@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let card of _cards; let i = index">
+      <div class="row">
+        <app-card
+          [card_name]="card.title"
+          [read_time]="card.estimatedReadTime">
+          <card-number>{{i+1}}</card-number>
+          <span app-post [post]="card.post"></span>
+        </app-card>
+      </div>
+    </div>
+  </div>
+</div>
