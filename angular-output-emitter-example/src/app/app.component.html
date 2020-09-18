@@ -1,0 +1,9 @@
+<div class="container my-6">
+  <div class="border border-light p-3 mb-4">
+    <h2 class="text-center">Asset Allocation calculator</h2>
+    <div class="d-flex align-items-center justify-content-center" style="height: 350px">
+      <app-assets (calculate-asset)="refresh($event)"></app-assets>
+      <app-asset-chart></app-asset-chart>
+    </div>
+  </div>
+</div>

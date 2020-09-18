@@ -1,0 +1,19 @@
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Debt : $</span>
+  </div>
+  <input type="number" class="form-control" [(ngModel)]="asset.debt">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Equity : $</span>
+  </div>
+  <input type="number" class="form-control" [(ngModel)]="asset.equity" name="equity">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Mutual Funds : $</span>
+  </div>
+  <input type="number" class="form-control" [(ngModel)]="asset.mutualFund" name="mutualFund">
+</div>
+<button type="submit" (click)="drawChart()" class="btn btn-success">Calculate</button>
